@@ -40,12 +40,12 @@
   width: 50vw;
   height: 50vw;
   background: #eee;
-  border-top-left-radius: 15px 30px;
-  border-bottom-right-radius: 15px 30px;
+  border-top-left-radius: 7% 15%;
+  border-bottom-right-radius: 7% 15%;
   border-top-right-radius: 50%;
   border-bottom-left-radius: 50%;
   margin: 40px auto;
-  box-shadow: 0 0 10px 5px rgba(0,0,0,0.6) inset;
+  box-shadow: 0 0 3vw 3vw rgba(0,0,0,0.6) inset;
 }
 .section {
   width: 100%;
