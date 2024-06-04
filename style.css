@@ -1,0 +1,132 @@
+.p p{
+  counter-increment: d;
+  display: inline-block;
+  min-height: 26vw;
+  min-width: 27%;
+  border-radius: 50%;
+  background: #eee;
+  outline: 0.4vw solid black;
+  margin: 2%;
+  box-shadow: 
+    1vw 1vw royalblue ,
+    -1vw -1vw red;
+  position: relative;
+}
+.p p::before{
+  display: inline-block;
+  content: counter(d);
+  padding: 5px 10px;
+  font-size:15px;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 3vw;
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.p p::after{
+  content: "element";
+  font-size: 5vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.box-shadow{
+  width: 50vw;
+  height: 50vw;
+  background: #eee;
+  border-top-left-radius: 15px 30px;
+  border-bottom-right-radius: 15px 30px;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  margin: 40px auto;
+  box-shadow: 0 0 10px 5px rgba(0,0,0,0.6) inset;
+}
+.section {
+  width: 100%;
+  height: 100vw;
+}
+section{
+  max-width: 100vw;
+  min-width: 380px;
+  min-height: 56vw;
+  margin: 30px auto;
+  position: relative;
+}
+section::before{
+  content: '';
+  width: 2px;
+  height: 100%;
+  background: dodgerblue;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+section::after{
+  content: "or";
+  text-align: center;
+  font-size: 15px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: dodgerblue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+}
+section .contener-l,
+.contener-r{
+  position: absolute;
+  display: inline-block;
+  width: 46%;
+  background: #eee;
+  height: 100%;
+}
+.contener-r{
+  left: 0;
+}
+.contener-l{
+  right: 0;
+}
+.title{
+  width: 85%;
+  min-height: 5vw;
+  text-align: center;
+  background: dodgerblue;
+  margin: 10px auto;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 7px;
+  position: relative;
+}
+.price{
+  width: 90%;
+  min-height: 40vw;
+  background: #ddd;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 30px;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+}
+span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 5vw;
+}
+.pricee{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
